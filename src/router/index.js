@@ -34,6 +34,7 @@ import JiaYouZhanTiXian from '@/components/CaiWuZhongXin/TiXianGuanLi/JiaYouZhan
 import YongHuZengZhang from '@/components/TongJiBaoBiao/YongHuZengZhang' // 用户新增
 import YongHuShuXing from '@/components/TongJiBaoBiao/YongHuShuXing' // 用户属性
 import fuKuanBiShu from '@/components/TongJiBaoBiao/fuKuanBiShu' // 付款笔数
+import YongHuLiuLiang from '@/components/TongJiBaoBiao/YongHuLiuLiang' // 用户流量
 
 // 订单管理
 import DingDanLieBiao from '@/components/DingDanGuanLi/DingDanLieBiao' // 订单列表
@@ -87,7 +88,7 @@ export default new Router({
         },
         // 财务报表
         {
-          path:'/XiuLiChangShouKuanJieSuan', // 修理厂收款结算
+          path: '/XiuLiChangShouKuanJieSuan', // 修理厂收款结算
           name: 'XiuLiChangShouKuanJieSuan',
           component: XiuLiChangShouKuanJieSuan
         },
@@ -158,6 +159,11 @@ export default new Router({
           path: '/YongHuShuXing',
           name: 'YongHuShuXing',
           component: YongHuShuXing
+        },
+        {
+          path: '/YongHuLiuLiang',//用户流量
+          name: 'YongHuLiuLiang',
+          component: YongHuLiuLiang
         },
         {
           path: '/fuKuanBiShu', // 付款笔数
@@ -245,7 +251,7 @@ export default new Router({
           name: 'JiaYouZhanTiXian',
           component: JiaYouZhanTiXian
         },
-        
+
       ]
     }
   ]
